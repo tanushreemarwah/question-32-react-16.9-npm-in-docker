@@ -38,18 +38,18 @@ class AddTwoNumbers extends React.Component {
         <div className="number">
           <label>
             Enter First Number: 
-            <input id="input1" ref="input1" name="input1" type="text" pattern="[0-9]*" value={this.state.input1} onChange={this.handleChange} />
+            <input id="Text1" ref="input1" name="input1" type="text" pattern="[0-9]*" value={this.state.input1} onChange={this.handleChange} />
           </label>
           <label>
             Enter Second Number: 
-            <input id="input2" ref="input2" name="input2" type="text"  pattern="[0-9]*" value={this.state.input2} onChange={this.handleChange} />
+            <input id="Text2" ref="input2" name="input2" type="text"  pattern="[0-9]*" value={this.state.input2} onChange={this.handleChange} />
           </label>
           <label>
             Result: 
-            <input id="result" type="text" name="result" ref="result" value={this.state.value} readOnly={true}/>
+            <input id="txtresult" type="text" name="result" ref="result" value={this.state.value} readOnly={true}/>
           </label>
           <br/>
-          <input id="submit-button" name="click-button" type="submit" disabled={!this.state.input1 || !this.state.input2} value="Display Result" />
+          <input id="submit-button" name="clickbtn" type="submit" disabled={!this.state.input1 || !this.state.input2} value="Display Result" />
         </div>
       </form>
     );
