@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 35px;
 }
 
 code {
@@ -23,9 +24,10 @@ label {
 }
 
 input, textarea {
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 #submit-button {
+  font-size: 20px;
   width: 30%;
 }

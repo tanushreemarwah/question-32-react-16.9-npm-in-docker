@@ -11,10 +11,11 @@ class AddTwoNumbers extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  handleChange = (event) => {
+  handleChange(event) {
     let input = event.target.name;
     let value = event.target.value;
     if (!Number(value)){
+      this.setState({value: ''});
       alert("You must input a number");
     }
     this.setState({[input]: value});
